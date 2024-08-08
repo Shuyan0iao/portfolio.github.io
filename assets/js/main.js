@@ -15,26 +15,60 @@ const showMenu = (toggleId, navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*==================== PAGE LOAD ====================*/
-function loadContent(url, containerId) {
+function loadContent(url, containerId, callback) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
             document.getElementById(containerId).innerHTML = data;
+            if (callback) callback();  // 执行回调函数
         })
         .catch(error => console.error(`Error loading ${containerId}:`, error));
 }
+
 
 function loadSkills() {
     loadContent('skills.html', 'skills-container');
 }
 
-function loadHomes() {
-    loadContent('homes.html', 'homes-container');
+function loadServices() {
+    loadContent('services.html', 'services-container', () => {
+        const serviceModals = document.querySelectorAll(".service-modal");
+        const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
+        const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+
+        var modal = function (modalClick) {
+            serviceModals[modalClick].classList.add("active");
+        }
+
+        learnmoreBtns.forEach(function (learnmoreBtn, i) {
+            learnmoreBtn.addEventListener("click", () => {
+                modal(i);
+            });
+        });
+
+        modalCloseBtns.forEach((modalCloseBtn) => {
+            modalCloseBtn.addEventListener("click", () => {
+                serviceModals.forEach((modalView) => {
+                    modalView.classList.remove("active");
+                });
+            });
+        });
+    });
+}
+
+function loadContact() {
+    loadContent('contact.html', 'contact-container');
+}
+
+function loadFooter() {
+    loadContent('footer.html', 'footer-container');
 }
 
 window.onload = function() {
     loadSkills();
-    loadHomes();
+    loadServices();
+    loadContact();
+    loadFooter();
 };
 
 /*==================== SWIPER JS ====================*/

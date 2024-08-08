@@ -16,7 +16,11 @@
         <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/homes.css">
         <link rel="stylesheet" href="assets/css/skills.css">
+        <link rel="stylesheet" href="assets/css/services.css">
+        <link rel="stylesheet" href="assets/css/contact.css">       
+        <link rel="stylesheet" href="assets/css/footer.css">       
 
+        <link rel="stylesheet" href="assets/css/clock.css">       
         <title>Shuyan Qiao's Portofolio</title>
     </head>
     <body>
@@ -59,7 +63,17 @@
                                     <div class="homes__buttons">
                                         <a href="#" class="homes__button">CV <i class='bx bx-right-arrow-alt homes__button-icon'></i></a>
                                         <a href="#" class="homes__button">Resume <i class='bx bx-right-arrow-alt homes__button-icon'></i></a>
+                                        <ul class = "home__connectList">
+                                            <li>Linkedin:  &nbsp;<a href="https://www.linkedin.com/in/shuyanqiao" target="_blank">
+                                                <i class='bx bxl-linkedin-square' style='color:#EECDCD'></i></a></li>
+                                            <li>Phone:  &nbsp;<a href="tel:+1234567890" target="_blank">
+                                                <i class='bx bx-phone' style='color:#EECDCD'></i></a></li>
+                                            <li>Email:  &nbsp;<a href="mailto:shyan.qiao@gmail?subject=Contact%20Request&body=Hello%2C%20I%20would%20like%20to%20contact%20you%20regarding..." target="_blank">
+                                                <i class='bx bxs-envelope' style='color:#EECDCD'></i></a></li>
+                                        </ul>
+        
                                     </div>
+                                    
                                 </div>
                                 <div class="homes__pic">
                                     <img src="assets/img/myphoto.jpg" alt="">
@@ -72,28 +86,103 @@
                         <section class="homes swiper-slide">
                             <img src="assets/img/home2.jpg" alt="" class="homes__bg">
             
-                            <div class="homes__container bd-container">
-                                <div class="test">
-                                    <p>It is an Indonesian island known and beautiful for its lush active volcanic mountains.
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                    </p>
+
+                            <div class="clock__container">
+
+
+                                <div id="content">
+
+                                    <div class="card">
+                                        <div class="card-time">
+                                            2021
+                                        </div>
+                                        <div class="card-title">
+                                            《你的孤独，虽败犹荣》
+                                        </div>
+                                        <div class="card-passage">
+                                            <br>
+                                            如果你停止，就是谷底。如果你还在继续，就是上坡。这是我听过关于人生低谷最好的阐述。
+                                            <br>
+                                            <br>
+                                            If you stop, it's rock bottom. If you're still going, it's uphill. That's the best statement I've
+                                            ever heard
+                                            about a rock bottom.
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-time">
+                                            2022
+                                        </div>
+                                        <div class="card-title">
+                                            《萤火之森》
+                                        </div>
+                                        <div class="card-passage">
+                                            <br>
+                                            如果时光可以倒流，我还是会选择认识你，虽然会伤痕累累，但是心中的温暖记忆是谁都无法给予的。谢谢你来过我的世界。
+                                            <br>
+                                            <br>
+                                            If time could be turned back, I would still choose to know you, although it will be scarred, but the
+                                            warm
+                                            memory in my heart is no one can give. Thank you for coming to my world.
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-time">
+                                            2023
+                                        </div>
+                                        <div class="card-title">
+                                            《平凡的世界》
+                                        </div>
+                                        <div class="card-passage">
+                                            <br>
+                                            人生啊，是这样不可预测，没有永恒的痛苦，也没有永恒的幸福，生活像流水一般，有时是那么平展，有时又是那么曲折。
+                                            <br>
+                                            <br>
+                                            Life, ah, is so unpredictable, there is no eternal pain, there is no eternal happiness, life is like
+                                            running
+                                            water, sometimes it is so flat, sometimes it is so tortuous.
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-time">
+                                            2024
+                                        </div>
+                                        <div class="card-title">
+                                            《道林・格雷的画像》
+                                        </div>
+                                        <div class="card-passage">
+                                            <br>
+                                            不要虚掷你的黄金时代，不要去倾听枯燥乏味的东西，不要设法挽留无望的失败，不要把你的生命献给无知、平庸和低俗。
+                                            <br>
+                                            <br>
+                                            Do not waste your golden years, do not listen to the boring, do not try to prevent hopeless failure,
+                                            do not
+                                            give your life to ignorance, mediocrity and vulgarity.
+                                        </div>
+                                    </div>
+                                </div>
+                                <i class="bx bxs-caret-up-circle" id="up-btn" onclick="slideToPrev()"></i>
+                                <i class="bx bxs-caret-up-circle" id="down-btn" onclick="slideToNext()"></i>
+                                <button id="up-btn" onclick="slideToPrev()">test btn</button>
+                                <button id="up-btn" onclick="slideToNext()">test btn</button>
+                                <div id="clock">
+                                    <div id="clock-center"></div>
+                                    <div id="clock-pointer"></div>
+                                    <div id="clock-table"></div>
                                 </div>
                             </div>
                         </section>
-                        
                         <!--========== HOME 3 ==========-->
-                        <section class="islands swiper-slide">
+                        <section class="homes swiper-slide">
+                            <img src="assets/img/home3.jpg" alt="" class="homes__bg">
             
-            
-                            <div class="islands__container bd-container">
-                                <div class="islands__data">
-                                    <h2 class="islands__subtitle">Islands</h2>
-                                    <h1 class="islands__title">Palawan</h1>
-                                    <p class="islands__description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
-                                    <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                            <div class="homes__container bd-container">
+                                <div class="homes__data">
+                                    <h2 class="homes__subtitle">homes</h2>
+                                    <h1 class="homes__title">Palawan</h1>
+                                    <p class="homes__description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
+                                    <a href="#" class="homes__button">Explore <i class='bx bx-right-arrow-alt homes__button-icon'></i></a>
                                 </div>
-            
-            
                             </div>
                         </section>
                     </div>
@@ -102,19 +191,26 @@
                 <!--========== CONTROLS ==========-->
                 <div class="controls gallery-thumbs">
                     <div class="controls__container swiper-wrapper"> 
-                        箭头
+                        <i class='bx bx-chevrons-left' ></i>
                         <img src="assets/img/button1.png" alt="" class="controls__img swiper-slide">
                         <img src="assets/img/button2.png" alt="" class="controls__img swiper-slide">
                         <img src="assets/img/button3.png" alt="" class="controls__img swiper-slide">
-                        箭头
+                        <i class='bx bx-chevrons-right' ></i>
                     </div>
                 </div>
                 
             </div>
         <!-- SKILLS -->
-        <div id="skills-container"></div>          
+        <div id="skills-container"></div>   
+        <!-- SERVICES -->
+        <div id="services-container"></div> 
+        <!-- CONTACT -->
+        <div id="contact-container"></div> 
+        <!-- FOOTER --> 
+        <footer>
+        <div id="footer-container"></div>
+        </footer>
         </main>
-
         <!--========== GSAP ==========-->
         <script src="assets/js/gsap.min.js"></script>
 
@@ -123,5 +219,75 @@
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>     
+                <!--========== MAIN JS ==========-->
+        <script src="assets/js/clock.js"></script>   
+        <script>
+ // 定义变量
+let offset = 0;
+let maxOffset = 0;
+let minOffset = -3;
+const slides = Array.from(document.querySelectorAll(".card"));
+const clock = document.querySelector("#clock-table");
+let startYear = 2021;
+
+// 添加时钟刻度
+for (let i = -60, year = startYear - 1; i < 300; i += 6) {
+    addClockScale(i);
+    if (i % 60 === 0) {
+        addThickClockScale(i, year);
+        year++;
+    }
+}
+
+// 添加时钟刻度
+function addClockScale(degree) {
+    const invisibleClockTable = document.createElement("div");
+    invisibleClockTable.className = "invisible-table";
+    invisibleClockTable.style.transform = `rotate(${degree}deg)`;
+    const clockScale = document.createElement("div");
+    clockScale.className = "clock-scale";
+    invisibleClockTable.appendChild(clockScale);
+    clock.appendChild(invisibleClockTable);
+}
+
+// 添加粗刻度
+function addThickClockScale(degree, time) {
+    const invisibleClockTable = document.createElement("div");
+    invisibleClockTable.className = "invisible-table";
+    invisibleClockTable.style.transform = `rotate(${degree}deg)`;
+    const thickClockScale = document.createElement("div");
+    thickClockScale.className = "clock-thick";
+    const scaleContent = document.createElement("span");
+    scaleContent.textContent = `${time}`;
+    thickClockScale.appendChild(scaleContent);
+    invisibleClockTable.appendChild(thickClockScale);
+    clock.appendChild(invisibleClockTable);
+}
+
+// 向前切换卡片
+function slideToPrev() {
+    offset = Math.min(maxOffset, offset + 1);
+    slides.forEach(slide => {
+        slide.style.transform = `translateY(${offset * 100}%)`;
+    });
+    clockRotate(offset * 60);
+}
+
+// 向后切换卡片
+function slideToNext() {
+    offset = Math.max(minOffset, offset - 1);
+    slides.forEach(slide => {
+        slide.style.transform = `translateY(${offset * 100}%)`;
+    });
+    clockRotate(offset * 60);
+}
+
+// 旋转时钟表盘
+function clockRotate(degree) {
+    clock.style.transform = `rotate(${degree}deg)`;
+}
+
+
+        </script>
     </body>
 </html>

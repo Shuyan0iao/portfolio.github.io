@@ -1,7 +1,7 @@
 /* SKILLS */
 /* 技能 */
 .section {
-    background-color: #c5cadf;
+    background-color: var(--background-color);
 }
 .skills .container {
     display: flex;
@@ -39,7 +39,7 @@
     }
     
     .skills-info h4 label {
-    background: var(--secend-color);
+    background: var(--second-color);
     color: #fff;
     font-size: var(--normal-font-size);
     font-weight: 400;
@@ -54,7 +54,7 @@
     .edu-list .item {
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
-    border-bottom: 3px solid var(--secend-color);
+    border-bottom: 3px solid var(--second-color);
     padding: 20px;
     margin-top: 15px;
     border-radius: 6px;
@@ -110,7 +110,7 @@
     content: '';
     position: absolute;
     height: 100%;
-    background-color: var(--secend-color);
+    background-color: var(--second-color);
     top: 0;
     left: 0;
     width: 95%;
@@ -139,7 +139,7 @@
     
     .experience-card {
     background: var(--card-bg-color);
-    border-bottom: 3px solid var(--secend-color);
+    border-bottom: 3px solid var(--second-color);
     padding: 35px;
     border-radius: 6px;
     box-shadow: var(--box-shadow);
