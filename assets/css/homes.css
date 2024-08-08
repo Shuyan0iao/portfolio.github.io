@@ -1,0 +1,202 @@
+/*========== Homes ==========*/
+.bd-container {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+.homes__data {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(197, 195, 163, 0.15); /* 使用 rgba 颜色 */
+    padding: 10px;
+    border-radius: 15px; /* 边缘平滑 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(10px); /* 为兼容性添加 -webkit- 前缀 */
+    border: 1px solid rgba(209, 206, 165, 0.315); /* 增加边框 */
+}
+.homesPage {
+    position: relative;
+}
+
+.homes {
+    height: 100vh;
+    position: relative;
+}
+
+.homes__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.homes__container {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+}
+
+.homes__subtitle, .homes__title, .homes__description {
+    color: var(--title-color);
+}
+
+.homes__subtitle {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+}
+
+.homes__title {
+    font-size: var(--biggest-font-size);
+}
+
+.homes__description {
+    margin-bottom: 1rem;
+}
+
+.homes__pic {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.homes__pic img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(197, 195, 163, 0.15); /* 使用 rgba 颜色 */
+    padding: 10px;
+    border-radius: 15px; /* 边缘平滑 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(10px); /* 为兼容性添加 -webkit- 前缀 */
+    border: 1px solid rgba(209, 206, 165, 0.315); /* 增加边框 */
+}
+
+.homes__buttons {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding-top: 3rem;
+}
+.homes__button{
+    width: 7.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--first-color-lighter);
+    color: var(--text-color);
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.homes__button:hover {
+    background-color: var(--first-color);
+}
+
+.homes__button-icon {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+/*Popup*/
+/*.homes__popup {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--first-color-lighter);
+  padding: 1rem .75rem;
+  border-radius: 1rem;
+}
+
+.homes__popup-close {
+  position: absolute;
+  top: -.75rem;
+  right: -.75rem;
+  display: inline-flex;
+  padding: .35rem;
+  background-color: var(--first-color);
+  color: var(--first-color-lighter);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}*/
+
+/*
+.show-popup {
+  display: block;
+}
+*/
+
+/* Controls */
+.controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .25rem .5rem;
+    background-color: var(--first-color);
+    border-radius: .75rem;
+    z-index: var(--z-tooltip);
+    overflow: hidden;
+  }
+  
+.controls__img {
+    width: 35px;
+    height: 35px;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.controls__container {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+/* Active controls */
+.swiper-slide-thumb-active {
+    width: 45px;
+    height: 45px;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices */
+@media screen and (max-width: 500px) {
+    .homes__pic {
+      display:none;
+    }
+  }
+@media screen and (max-width: 320px) {
+    .bd-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .controls__container {
+        column-gap: .25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+/* 就在这里！！*/
+.bd-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
+  
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+/* 
+.homes {
+    height: 640px;
+}
+    */
+}
