@@ -1,0 +1,254 @@
+
+/*========== Homes ==========*/
+.homes {
+  height: 100vh;
+  position: relative;
+}
+
+.homes__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.homes__container {
+
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr .25fr;
+  align-content: center;
+  margin: 10px;
+}
+.homes__data {
+  margin: 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.homes__subtitle, .homes__title, .homes__description {
+  color: var(--body-color);
+}
+
+.homes__subtitle {
+  color: var(--first-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+}
+
+.homes__title {
+  font-size: var(--biggest-font-size);
+  border-bottom: 1px solid rgb(102, 100, 100);
+  color: var(--first-color-darker);
+}
+
+.homes__description {
+  color: var(--first-color-darker);
+  margin-bottom: 1rem;
+}
+.homes__pic {
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.homes__pic img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(163, 158, 161, 0.185); /* 使用 rgba 颜色 */
+    padding: 10px;
+    border-radius: 15px; /* 边缘平滑 */
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(10px); /* 为兼容性添加 -webkit- 前缀 */
+    border: 1px solid rgba(255, 255, 255, 0.315); /* 增加边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+.homes__buttons {
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  padding-top: 3rem;
+}
+.homes__button{
+  width: 7.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--first-color-lighter);
+  color: var(--first-color-darker);
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  box-shadow:  0 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.homes__button:hover {
+  background-color: var(--first-color);
+}
+
+.homes__button-icon {
+  font-size: 1.5rem;
+  margin-left: .5rem;
+}
+
+.home__connectList a i {
+  transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+.home__connectList a:hover i {
+  color: #000000 !important; /* 鼠标悬停时字体变为黑色，使用 !important 确保样式应用 */
+}
+
+.homes__popup {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--first-color-lighter);
+  padding: 1rem .75rem;
+  border-radius: 1rem;
+}
+
+.homes__popup-close {
+  position: absolute;
+  top: -.75rem;
+  right: -.75rem;
+  display: inline-flex;
+  padding: .35rem;
+  background-color: var(--first-color);
+  color: var(--first-color-lighter);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Show popup*/
+.show-popup {
+  display: block;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .25rem .5rem;
+  background-color: var(--body-color);
+  border-radius: .75rem;
+  z-index: var(--z-tooltip);
+  overflow: hidden;
+}
+
+.controls__img {
+  width: 35px;
+  height: 35px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.controls__container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* Active controls */
+.swiper-slide-thumb-active {
+  width: 45px;
+  height: 45px;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .bd-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .controls__container {
+    column-gap: .25rem;
+  }
+  .homes__popup-video {
+    width: 230px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homes__data {
+    margin: 20px 40px;
+  }
+  .homes__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .homes__description {
+    padding-right: 5rem;
+    margin-bottom: 2rem;
+  }
+  .homes__video {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .homes__video-icon {
+    font-size: 3rem;
+  }
+  .homes__popup-video {
+    width: 500px;
+    height: 250px;
+  }
+  .homes__popup-close {
+    font-size: 1.5rem;
+  }
+  .controls {
+    padding: .5rem;
+    border-radius: 1.25rem;
+  }
+  .controls__container {
+    column-gap: 1.5rem;
+  }
+  .controls__img {
+    width: 45px;
+    height: 45px;
+    border-radius: .75rem;
+  }
+  .swiper-slide-thumb-active {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /*.bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+  .homes__description {
+    padding-right: 11rem;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+  .homes {
+    height: 640px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .homes__data {
+    margin-left: 300px;
+  }
+  .homes__pic {
+    margin-left: 150px;
+  }
+}

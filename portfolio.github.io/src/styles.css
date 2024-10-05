@@ -1,0 +1,186 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  /*========== Colors ==========*/
+  --first-color: #c8b39e;
+  --first-color-lighter: #E7D1BB;
+  --first-color-darker: #84725e;
+  --second-color: #A096A5;
+  --second-color-darker:#463e4b;
+  --third-color: #252841;
+  --third-color-lighter: #3d3f5b;
+  --third-color-darker: #151931;
+  --forth-color:#847a86;
+  --forth-color-lighter:#A096A2;
+  /*--body-color: #fefaec;*/
+  --test-color:red;
+
+  --transparent-color :rgba(188, 185, 169, 0.15);
+  /* 盒子阴影 */
+  --box-shadow: 0px 0px 20px rgb(0 0 0 /10%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .80em;
+  /*========== Font weight ==========*/
+  --font-small: 200;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 3rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*========== BASE ==========*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--third-color-darker);
+  color: var(--first-color-lighter);
+}
+
+h1, h2, ul, p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== LAYOUT ==========*/
+.main {
+  position: relative;
+}
+
+/*========== SECTION  ==========*/
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  flex-direction: column;
+}
+
+.section {
+  color: var(--forth-color-lighter);
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 2rem 2rem;
+}
+
+.section-title-01 {
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, var(--first-color-lighter) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .1;
+}
+
+.section-title-02 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+  color: var(--first-color-lighter);
+}
+
+.section-title-02::before {
+  content: '';
+  position: absolute;
+  background-color: var(--forth-color-lighter);
+  width: 70px;
+  height: 5px;
+  right: 10;
+  bottom: 0;
+}
+/* 导航栏 + home相关
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  .nav__link {
+    color: var(--body-color);
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .homes__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .homes__description {
+
+    margin-bottom: 2rem;
+  }
+  .controls {
+    padding: .5rem;
+    border-radius: 1.25rem;
+  }
+  .controls__container {
+    column-gap: 1.5rem;
+  }
+  .controls__img {
+    width: 45px;
+    height: 45px;
+    border-radius: .75rem;
+  }
+  .swiper-slide-thumb-active {
+    width: 55px;
+    height: 55px;
+  }
+}
+*/ 
+/****************************/
+
+
+
+
+
+
+
+
+
+
+
