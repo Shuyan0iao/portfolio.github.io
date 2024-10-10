@@ -15,7 +15,7 @@ export default function homes_intro() {
       <div className="homes__container bd-container">
         <div className="homes__data">
           <h2 class="homes__subtitle">Hi, I am</h2>
-          <h1 class="homes__title">Shuyan Qiao</h1>
+          <h1 class="homes__title">Annika Qiao</h1>
           <p class="homes__description">
             Front-End Engineer with expertise in JavaScript, React, and user
             experience design.{<br></br>}
