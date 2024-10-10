@@ -1,0 +1,131 @@
+.timeLine {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    max-width: 1150px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.iconfont {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 14%;
+    z-index: 999;
+    font: 900 80px '';
+    cursor: pointer;
+    color: var(--first-color);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), 
+    -1px -1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#up-btn {
+    top: 15%;
+}
+
+#down-btn {
+    bottom: 15%;
+}
+
+#clock-content {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--second-color);
+    transition: transform .8s ease-in-out;
+}
+
+.card-time {
+    font-size: 40px;
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+    
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: var(--font-medium);
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.card-passage {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    color: var(--first-color);
+}
+
+#clock {
+    height: 120%;
+    /* 纵横比为1:1 */
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    right: -40%;
+    top: -15%;
+    border-radius: 50%;
+    background: linear-gradient(172.5760147233725deg, #E7D1BB 7.958287596048299%,#151931 80.40614709110866%);
+    border: var(--first-color) 30px solid;
+}
+
+@media(max-width:1000px) {
+    #clock {
+        right: -90%;
+    }
+}
+
+#clock-table {
+    width: 96%;
+    height: 96%;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transition: transform .8s ease-in-out;
+}
+
+.invisible-table {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    position: absolute;
+}
+
+.clock-thick {
+    width: 6%;
+    height: 6px;
+    background-color: var( --first-color-lighter);
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0px;
+}
+
+.clock-thick span {
+    font-size: 50px;
+    position: absolute;
+    left: 140%;
+    top: calc(50% - 30px);
+    color: var(--second-color-darker);
+}
+
+.clock-scale {
+    width: 4%;
+    height: 2px;
+    background-color: var(--first-color);
+    position: absolute;
+    top: calc(50% - .5px);
+    left: 0px;
+} 

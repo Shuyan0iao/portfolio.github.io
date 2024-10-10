@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './clock.css'; // Assuming you have a separate CSS file for styling
+ // Assuming you have a separate CSS file for styling
 
 const Clock = () => {
     const clockRef = useRef(null);
