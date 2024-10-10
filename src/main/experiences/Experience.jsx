@@ -6,30 +6,30 @@ const Experience = () => {
 
   const experienceData = [
     {
-      title: "Front-end engineer",
-      company: "American Home textile",
-      year: "2024",
-      description: "Designed and developed CRM platform",
+      title: "Software Engineer",
+      company: "American Home Textile",
+      year: "2024 - Present",
+      description: "Develop a scalable, data-driven, vendor-independent CRM platform",
       detailedDescription: (
         <>
-          <p>1. Contributed to the development of a scalable, data-driven, vendor-independent CRM platform, significantly enhancing customer data management and marketing automation efficiency</p>
-          <p>2. Utilized Docker for containerized deployment and coordinated deployment with automated scripts in Bitbucket pipelines, including AWS CLI installation and cluster authentication. Managed cloud resources on AWS, such as EC2, S3, RDS, and Lambda functions, greatly improving product performance and operational efficiency</p>
-          <p>3. Implemented responsive, user-centric interfaces using React, Next.js, JavaScript, HTML, and CSS, and developed and maintained a robust backend with Node.js and MongoDB</p>
-          <p>4. Integrated the distributed workflow engine Camunda for process orchestration and Keycloak for security authentication, enhancing system efficiency and security</p>
+          <p>1. Develop a scalable, data-driven, vendor-independent CRM platform using Java, Vue, Element UI, and Redis, enhancing customer data management and marketing automation efficiency.</p>
+          <p>2. Developed data visualization capabilities, effectively communicating technical concepts to non-technical stakeholders to support data-driven decision-making, generating insightful charts across sales, marketing, and service dimensions.</p>
+          <p>3. Designed customizable workflows with modular extensions, implementing multi-tiered approval permissions to ensure robust data security and streamline operations.</p>
+          <p>4. Established automated reminders for customer follow-ups, enhancing communication, record-keeping, and task management efficiency.</p>
         </>
       ),
     },
     {
-      title: "Software engineer",
-      company: "Airclub software",
+      title: "Full Stack Developer Intern",
+      company: "Airclub Software",
       year: "2023 - 2024",
-      description: "Contributed to the development and maintenance of an integrated software platform",
+      description: "Spearheaded the development of a part of the membership application",
       detailedDescription: (
         <>
-          <p>1. Contributed to the development and maintenance of an integrated software platform using TypeScript, React, Node.js, GraphQL, and Tailwind CSS, from requirements gathering to final implementation.</p>
-          <p>2. Led the development of the membership application independently, including the user interface. Collaborated with the visual design team using Figma. Ensured compatibility with older browsers, building complete functionalities using either graceful degradation or progressive enhancement as needed.</p>
-          <p>3. Optimized initial page load time using dynamic import and code splitting technologies, loading specific modules only when needed. Reduced unnecessary asynchronous data requests and lazy-loaded non-visible components to minimize rendering blockages.</p>
-          <p>4. Compressed all images in the project using ImageOptim, achieving an average compression rate of 40%, significantly reducing page load time. Selected the optimal image format based on usage scenarios, such as using WebP.</p>
+          <p>1. Spearheaded the development of a part of the membership application, overseeing both front-end and back-end functionality, resulting in a 20% increase in user retention.</p>
+          <p>2. Applied user behavior analysis to enhance user experience. Collaborated with the visual design team using Figma to ensure a smooth and consistent UI/UX.</p>
+          <p>3. Developed and maintained an integrated software platform using TypeScript, React, Node.js, GraphQL, and Tailwind CSS, ensuring timely delivery and customer satisfaction.</p>
+          <p>4. Refactored large components into smaller, reusable modules, reducing rendering overhead by 15%, while ensuring cross-browser compatibility through progressive enhancement techniques.</p>
         </>
       ),
     },
