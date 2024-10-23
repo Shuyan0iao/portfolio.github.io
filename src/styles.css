@@ -82,6 +82,14 @@ img {
   position: relative;
 }
 
+.app-content {
+  opacity: 0; /* 默认不可见 */
+  transition: opacity 1.5s ease-in;
+}
+
+.app-fade-in {
+  opacity: 1;
+}
 /*========== SECTION  ==========*/
 .flex-center{
   display: flex;
