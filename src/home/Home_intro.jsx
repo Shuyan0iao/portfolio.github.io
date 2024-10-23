@@ -17,10 +17,8 @@ export default function homes_intro() {
           <h2 class="homes__subtitle">Hi, I am</h2>
           <h1 class="homes__title">Annika Qiao</h1>
           <p class="homes__description">
-            Front-End Engineer with expertise in JavaScript, React, and user
-            experience design.{<br></br>}
-            Passionate about developing high-quality web interfaces and looking
-            for exciting software engineering roles
+          I am a skilled software engineer with a strong background in developing scalable,{<br></br>}
+          data-driven applications, specializing in user-centered design and data visualization.
           </p>
           <div className="homes__buttons">
             <a href={RESUME} className="homes__button" id="cvButton">
